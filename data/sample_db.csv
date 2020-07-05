@@ -1,0 +1,1009 @@
+Record,Time,Number of observations,Violations,Average distance,Location,Location type
+1,8:15:16,7,Yes,0.28,,Public Street
+2,1:57:02,8,Yes,1.14,,Mall
+3,6:04:43,2,Yes,1.02,,Hospital
+4,12:48:07,5,Yes,1.6,,Metro Station
+5,18:54:23,7,Yes,0.7,,Metro Station
+6,10:30:09,7,Yes,1.75,,Mall
+7,16:54:37,5,Yes,1.52,,Restaurant
+8,12:17:43,7,No,2.89,,Hospital
+9,20:55:56,5,No,2.55,,Metro Station
+10,13:23:02,4,Yes,1.3,,Metro Station
+11,3:58:13,6,Yes,1.29,,Metro Station
+12,15:15:08,4,Yes,1.19,,Metro Station
+13,6:56:19,7,Yes,1.35,,Mall
+14,12:38:01,3,No,2.5,,Public Street
+15,21:04:16,5,Yes,1.55,,Public Street
+16,2:17:09,6,No,2.65,,Hospital
+17,10:29:16,3,No,2.58,,Public Street
+18,1:04:24,6,No,2.68,,Restaurant
+19,18:34:08,6,Yes,0.22,,Metro Station
+20,13:53:37,2,Yes,1.55,,Public Street
+21,13:00:13,4,Yes,0.22,,Metro Station
+22,3:16:30,8,No,2.1,,Hospital
+23,15:40:29,2,Yes,1.86,,Metro Station
+24,16:56:03,8,Yes,1.78,,Hospital
+25,2:42:49,9,No,2.94,,Mall
+26,19:50:47,4,Yes,1.64,,Public Street
+27,12:53:01,7,No,2.61,,Hospital
+28,16:17:19,2,Yes,1.78,,Hospital
+29,20:44:46,4,Yes,0.86,,Metro Station
+30,0:10:41,8,Yes,1.88,,Restaurant
+31,17:01:36,7,No,2.11,,Mall
+32,7:08:56,3,Yes,0.7,,Metro Station
+33,6:10:31,7,Yes,0.8,,Restaurant
+34,20:13:43,9,Yes,1.4,,Hospital
+35,22:51:51,9,Yes,0.57,,Metro Station
+36,0:28:24,7,Yes,1.72,,Hospital
+37,0:47:07,6,No,2.42,,Hospital
+38,19:52:49,2,Yes,0.32,,Mall
+39,9:05:24,10,Yes,1.04,,Restaurant
+40,19:21:30,7,No,2.73,,Mall
+41,6:41:19,2,Yes,1.28,,Public Street
+42,20:07:06,7,Yes,1.21,,Public Street
+43,8:00:17,10,Yes,1.8,,Hospital
+44,20:52:44,9,Yes,1.18,,Hospital
+45,5:32:04,2,Yes,0.24,,Restaurant
+46,11:05:44,2,No,2.12,,Mall
+47,10:03:15,4,Yes,1.51,,Mall
+48,13:56:20,3,No,2.04,,Mall
+49,22:26:51,10,Yes,1.65,,Mall
+50,7:56:16,10,Yes,1.87,,Restaurant
+51,16:48:25,6,Yes,0.43,,Metro Station
+52,14:52:06,6,No,2.88,,Metro Station
+53,0:59:18,8,Yes,1.98,,Hospital
+54,4:42:18,10,No,2.04,,Hospital
+55,13:59:31,4,Yes,1.3,,Restaurant
+56,12:58:22,5,Yes,0.79,,Hospital
+57,19:27:40,4,No,2.27,,Metro Station
+58,9:03:39,2,Yes,0.85,,Mall
+59,2:04:36,4,Yes,0.49,,Public Street
+60,23:34:21,6,No,2.71,,Restaurant
+61,16:03:29,4,Yes,1.59,,Restaurant
+62,10:12:06,8,No,2.53,,Hospital
+63,6:24:18,2,Yes,1.18,,Metro Station
+64,2:16:34,6,No,2.63,,Metro Station
+65,15:36:44,2,No,2.29,,Hospital
+66,9:03:24,9,Yes,1.57,,Hospital
+67,23:10:18,5,Yes,0.41,,Restaurant
+68,10:19:44,9,Yes,0.34,,Public Street
+69,23:06:22,4,Yes,2,,Hospital
+70,11:35:40,4,Yes,0.65,,Mall
+71,17:12:56,5,Yes,1.49,,Restaurant
+72,7:06:41,3,No,2.33,,Public Street
+73,12:12:11,4,No,2.05,,Mall
+74,9:46:42,5,Yes,1.86,,Metro Station
+75,23:26:45,8,Yes,0.42,,Public Street
+76,20:36:08,8,Yes,0.76,,Mall
+77,14:18:21,7,Yes,1.23,,Restaurant
+78,20:26:43,8,Yes,1.71,,Hospital
+79,2:50:56,8,No,2.3,,Mall
+80,13:11:44,8,Yes,0.28,,Metro Station
+81,1:07:51,2,Yes,0.54,,Public Street
+82,9:42:10,10,Yes,0.73,,Restaurant
+83,18:18:16,2,No,2.68,,Hospital
+84,23:10:20,10,No,2.95,,Hospital
+85,5:56:15,10,Yes,0.92,,Public Street
+86,15:11:51,2,No,2.5,,Mall
+87,4:48:54,3,No,2.27,,Mall
+88,15:18:08,9,No,2.35,,Public Street
+89,20:20:11,5,Yes,1.87,,Hospital
+90,20:27:37,6,Yes,1.54,,Mall
+91,20:33:29,9,Yes,1.46,,Metro Station
+92,3:55:34,3,No,2.91,,Hospital
+93,20:01:56,10,Yes,1.77,,Public Street
+94,12:31:54,9,Yes,0.58,,Hospital
+95,2:51:17,5,Yes,0.61,,Public Street
+96,21:04:46,2,Yes,0.76,,Public Street
+97,15:10:09,8,Yes,0.49,,Public Street
+98,8:54:03,8,No,2.62,,Restaurant
+99,11:51:49,4,Yes,0.83,,Mall
+100,7:55:42,5,Yes,0.6,,Hospital
+101,0:50:56,6,Yes,0.41,,Mall
+102,20:40:53,5,Yes,1.02,,Public Street
+103,15:24:50,2,Yes,1.49,,Public Street
+104,6:14:20,5,Yes,0.33,,Public Street
+105,23:53:30,4,Yes,1.73,,Metro Station
+106,19:24:56,4,Yes,0.43,,Restaurant
+107,4:31:04,10,No,2.88,,Mall
+108,10:51:51,2,Yes,1.34,,Restaurant
+109,4:37:59,10,No,2.01,,Metro Station
+110,9:37:47,3,Yes,1.61,,Restaurant
+111,1:15:21,8,Yes,0.68,,Metro Station
+112,11:54:00,6,Yes,1.19,,Mall
+113,11:05:09,4,No,2.14,,Restaurant
+114,5:30:48,3,No,2.93,,Metro Station
+115,18:21:35,10,No,2.03,,Hospital
+116,16:32:46,6,Yes,1.54,,Restaurant
+117,15:39:33,5,Yes,1,,Metro Station
+118,5:27:54,4,No,2.93,,Hospital
+119,3:44:06,5,Yes,0.29,,Hospital
+120,19:10:08,7,Yes,1.93,,Metro Station
+121,19:42:26,8,Yes,0.23,,Public Street
+122,14:20:48,2,No,2.58,,Hospital
+123,14:01:37,8,No,2.25,,Hospital
+124,10:42:49,6,Yes,1.38,,Mall
+125,20:00:49,4,Yes,1.86,,Restaurant
+126,10:15:36,4,No,2.36,,Mall
+127,21:29:28,6,No,2.15,,Public Street
+128,19:41:56,9,Yes,1.8,,Public Street
+129,1:59:19,2,Yes,1.81,,Public Street
+130,0:30:30,4,Yes,1.37,,Metro Station
+131,7:59:08,5,Yes,0.38,,Public Street
+132,21:33:27,10,Yes,1.77,,Hospital
+133,10:04:26,3,Yes,1.49,,Public Street
+134,21:30:19,9,Yes,1.43,,Metro Station
+135,11:27:06,7,Yes,0.66,,Public Street
+136,18:25:12,7,Yes,1.91,,Restaurant
+137,19:53:21,6,No,2.13,,Metro Station
+138,10:57:22,8,No,2.29,,Restaurant
+139,1:57:14,8,Yes,1.18,,Hospital
+140,3:21:19,9,Yes,0.66,,Restaurant
+141,13:07:33,3,Yes,1.16,,Hospital
+142,2:30:38,4,Yes,0.23,,Restaurant
+143,5:58:38,10,No,2.49,,Mall
+144,5:10:21,10,Yes,1.74,,Restaurant
+145,0:05:17,6,Yes,1.84,,Restaurant
+146,13:34:03,2,No,2.79,,Public Street
+147,11:56:41,10,Yes,1.57,,Mall
+148,23:00:25,2,Yes,1.1,,Hospital
+149,15:08:23,8,No,2.4,,Hospital
+150,4:50:04,2,Yes,1.22,,Mall
+151,5:27:00,3,No,2.55,,Hospital
+152,8:11:19,7,Yes,0.34,,Hospital
+153,11:27:13,5,No,2.68,,Metro Station
+154,4:24:01,9,No,2.14,,Metro Station
+155,3:26:39,10,Yes,1.2,,Hospital
+156,5:19:19,3,Yes,1.27,,Restaurant
+157,8:36:23,7,Yes,1.75,,Hospital
+158,10:10:43,4,Yes,1.67,,Hospital
+159,22:10:22,7,Yes,1.78,,Metro Station
+160,18:48:08,7,No,2.61,,Public Street
+161,18:46:22,10,Yes,1.25,,Mall
+162,12:32:17,6,No,2.5,,Hospital
+163,17:00:12,2,Yes,1.77,,Mall
+164,16:02:54,4,No,2.21,,Metro Station
+165,7:31:59,3,No,2.48,,Public Street
+166,14:57:22,3,No,2.5,,Public Street
+167,19:18:19,7,Yes,0.39,,Restaurant
+168,19:32:22,2,Yes,1.84,,Hospital
+169,8:37:00,10,No,2.96,,Restaurant
+170,23:59:44,4,No,2.95,,Metro Station
+171,10:50:01,9,Yes,1.34,,Mall
+172,19:16:48,2,No,2.46,,Metro Station
+173,15:48:42,2,No,2.03,,Restaurant
+174,19:53:31,7,No,2.08,,Public Street
+175,13:40:21,10,No,2.78,,Public Street
+176,10:13:29,4,No,2.14,,Public Street
+177,1:38:52,3,Yes,0.43,,Metro Station
+178,20:48:32,9,Yes,0.41,,Hospital
+179,17:28:48,6,Yes,0.31,,Mall
+180,15:56:49,8,Yes,0.53,,Metro Station
+181,19:26:27,8,Yes,1.09,,Public Street
+182,21:56:58,7,Yes,1.87,,Mall
+183,13:09:29,4,Yes,0.64,,Mall
+184,18:35:09,8,No,2.88,,Mall
+185,21:32:33,4,Yes,0.41,,Metro Station
+186,16:10:21,7,No,2.58,,Metro Station
+187,7:23:03,2,No,2.41,,Restaurant
+188,21:45:35,8,Yes,0.81,,Hospital
+189,10:40:36,5,Yes,0.66,,Public Street
+190,21:18:41,8,Yes,1.91,,Hospital
+191,0:08:24,2,Yes,0.21,,Metro Station
+192,21:19:24,3,No,2.12,,Restaurant
+193,1:49:13,6,Yes,1.14,,Mall
+194,13:16:25,7,No,2.84,,Mall
+195,14:51:07,4,Yes,1.2,,Mall
+196,6:04:20,4,No,2.45,,Mall
+197,9:48:32,4,No,2.14,,Metro Station
+198,18:21:09,8,No,2.84,,Metro Station
+199,0:57:36,6,Yes,0.71,,Hospital
+200,6:40:36,2,Yes,0.25,,Metro Station
+201,13:11:27,8,Yes,0.2,,Mall
+202,18:16:54,4,Yes,0.38,,Mall
+203,10:19:08,6,No,2.88,,Metro Station
+204,21:06:43,4,No,2.88,,Hospital
+205,11:12:14,2,No,2.35,,Restaurant
+206,18:08:54,5,Yes,0.38,,Public Street
+207,17:07:08,5,Yes,1.28,,Restaurant
+208,3:19:26,7,Yes,1.98,,Mall
+209,10:42:02,7,Yes,1.75,,Metro Station
+210,3:00:20,2,Yes,1.35,,Hospital
+211,16:33:04,4,Yes,0.39,,Metro Station
+212,8:20:34,6,No,2.53,,Mall
+213,8:06:06,3,Yes,1.72,,Metro Station
+214,22:24:22,5,Yes,1.84,,Restaurant
+215,7:29:23,8,Yes,1.36,,Public Street
+216,21:39:56,5,Yes,1.59,,Hospital
+217,22:38:05,4,No,2.82,,Mall
+218,20:47:54,6,No,2.65,,Hospital
+219,2:33:24,6,Yes,1.6,,Restaurant
+220,23:19:28,6,Yes,0.76,,Mall
+221,9:25:43,7,No,2.89,,Restaurant
+222,14:48:35,10,Yes,1.3,,Metro Station
+223,2:05:47,5,Yes,1.24,,Hospital
+224,13:16:37,7,No,2.88,,Hospital
+225,1:34:05,8,No,2.87,,Metro Station
+226,7:36:03,10,Yes,1.06,,Mall
+227,1:32:22,4,Yes,0.24,,Mall
+228,6:08:20,7,Yes,0.82,,Metro Station
+229,6:02:56,4,No,2.07,,Metro Station
+230,12:34:30,6,No,2.3,,Restaurant
+231,1:18:05,8,No,2.37,,Restaurant
+232,21:36:35,2,Yes,0.98,,Hospital
+233,3:28:02,5,Yes,0.8,,Hospital
+234,0:46:45,4,Yes,1.59,,Mall
+235,6:23:18,3,No,3,,Restaurant
+236,18:28:21,6,Yes,1.8,,Metro Station
+237,20:23:03,2,No,2.27,,Public Street
+238,10:59:31,8,Yes,0.97,,Metro Station
+239,12:11:11,9,Yes,0.28,,Hospital
+240,21:00:56,2,No,2.68,,Hospital
+241,15:38:38,10,Yes,0.38,,Metro Station
+242,8:28:19,6,Yes,0.98,,Restaurant
+243,9:57:05,5,No,2.41,,Restaurant
+244,1:41:15,9,Yes,1.13,,Public Street
+245,16:04:49,5,No,2.99,,Mall
+246,19:15:01,5,Yes,0.76,,Metro Station
+247,3:59:09,7,Yes,0.48,,Public Street
+248,14:07:07,2,Yes,1.72,,Metro Station
+249,19:40:06,10,No,2.87,,Mall
+250,22:03:16,10,Yes,0.35,,Mall
+251,0:24:23,3,No,2.62,,Mall
+252,1:47:47,7,Yes,0.64,,Public Street
+253,21:53:28,4,Yes,1.43,,Restaurant
+254,21:01:06,9,Yes,0.97,,Restaurant
+255,20:23:24,9,Yes,0.45,,Restaurant
+256,17:02:45,8,Yes,0.44,,Hospital
+257,21:22:56,2,No,2.17,,Restaurant
+258,18:14:06,7,Yes,1.8,,Restaurant
+259,6:51:53,4,Yes,1.17,,Restaurant
+260,20:47:37,9,Yes,1.18,,Restaurant
+261,2:45:39,10,Yes,1.36,,Restaurant
+262,14:03:25,3,No,2.01,,Metro Station
+263,14:41:39,9,Yes,0.95,,Metro Station
+264,13:03:58,2,Yes,1.93,,Public Street
+265,0:16:41,2,No,2.8,,Mall
+266,4:11:34,5,No,2.44,,Metro Station
+267,12:11:58,5,Yes,1.92,,Mall
+268,21:00:48,5,Yes,1.22,,Restaurant
+269,18:06:34,3,Yes,0.35,,Public Street
+270,0:29:57,7,Yes,0.77,,Public Street
+271,3:39:11,10,Yes,0.86,,Hospital
+272,12:04:07,10,No,2.53,,Hospital
+273,15:34:43,7,Yes,1.77,,Public Street
+274,14:06:07,9,Yes,0.96,,Hospital
+275,8:16:55,8,Yes,0.52,,Metro Station
+276,6:11:35,10,Yes,1.1,,Public Street
+277,22:45:39,4,Yes,0.74,,Mall
+278,7:47:17,10,Yes,0.21,,Restaurant
+279,20:41:38,8,Yes,1.52,,Mall
+280,16:10:35,3,Yes,0.43,,Hospital
+281,6:44:46,9,No,2.68,,Metro Station
+282,14:48:16,7,No,2.38,,Metro Station
+283,20:24:48,6,No,2.09,,Restaurant
+284,10:03:04,2,No,2.15,,Mall
+285,15:54:27,5,Yes,0.47,,Public Street
+286,2:36:21,7,Yes,1.99,,Restaurant
+287,15:06:44,5,No,2.43,,Public Street
+288,22:31:46,7,Yes,0.52,,Mall
+289,2:26:45,4,No,2.41,,Mall
+290,20:59:13,2,Yes,0.82,,Mall
+291,18:30:10,9,Yes,1.01,,Restaurant
+292,18:43:24,3,No,2.76,,Metro Station
+293,20:27:02,2,No,2.05,,Mall
+294,23:46:40,4,Yes,1.47,,Public Street
+295,13:04:38,8,Yes,1.32,,Mall
+296,19:41:28,8,Yes,1.82,,Mall
+297,13:31:43,2,No,2.1,,Public Street
+298,17:45:04,10,Yes,1.3,,Hospital
+299,10:51:41,7,Yes,1.34,,Restaurant
+300,10:56:11,7,No,2.83,,Hospital
+301,2:50:18,8,No,2.34,,Public Street
+302,20:12:46,2,Yes,0.41,,Restaurant
+303,22:47:09,5,Yes,1.8,,Hospital
+304,21:05:40,5,No,2.45,,Hospital
+305,9:25:40,6,Yes,1.03,,Public Street
+306,14:47:16,3,No,2.91,,Mall
+307,20:42:32,3,Yes,1.86,,Public Street
+308,2:29:06,2,Yes,1.09,,Restaurant
+309,23:42:15,6,Yes,0.75,,Public Street
+310,10:07:26,5,No,2.35,,Public Street
+311,8:49:26,4,Yes,1.36,,Restaurant
+312,7:12:58,6,Yes,0.71,,Hospital
+313,10:59:20,2,Yes,0.57,,Restaurant
+314,1:30:34,3,Yes,1.8,,Hospital
+315,21:44:00,8,Yes,0.89,,Restaurant
+316,7:51:31,3,No,2.94,,Public Street
+317,1:11:47,5,No,2.11,,Public Street
+318,16:36:10,9,No,2.47,,Metro Station
+319,0:12:34,2,Yes,1.29,,Hospital
+320,22:36:30,9,Yes,1.66,,Public Street
+321,10:57:17,4,No,2.12,,Public Street
+322,13:52:52,4,Yes,1.46,,Public Street
+323,1:19:46,8,Yes,1.3,,Public Street
+324,6:01:06,2,Yes,1.08,,Public Street
+325,5:42:29,2,No,2.7,,Public Street
+326,20:44:41,3,No,2.36,,Restaurant
+327,7:33:59,5,No,2.15,,Hospital
+328,15:08:11,6,Yes,1.27,,Restaurant
+329,23:09:37,7,Yes,1.05,,Mall
+330,2:14:13,9,No,2.79,,Hospital
+331,2:32:12,2,Yes,1.49,,Metro Station
+332,10:28:05,4,Yes,0.38,,Mall
+333,22:41:31,3,Yes,1,,Metro Station
+334,21:59:42,4,Yes,1.86,,Metro Station
+335,17:00:45,5,Yes,0.95,,Mall
+336,20:12:32,6,No,2.75,,Hospital
+337,13:40:35,7,No,2.47,,Mall
+338,1:23:27,9,No,2.01,,Mall
+339,0:57:57,10,Yes,1.11,,Public Street
+340,13:15:20,7,No,2.48,,Restaurant
+341,3:38:26,10,No,2.47,,Metro Station
+342,0:48:00,7,Yes,0.32,,Mall
+343,21:18:41,9,No,2.71,,Metro Station
+344,5:28:04,4,No,2.16,,Hospital
+345,11:45:45,5,Yes,1.59,,Mall
+346,5:17:49,8,No,2.7,,Mall
+347,6:52:41,2,Yes,0.69,,Metro Station
+348,4:00:08,9,Yes,1.39,,Hospital
+349,10:45:25,3,Yes,1.65,,Hospital
+350,17:28:45,4,No,2.01,,Public Street
+351,18:25:56,9,Yes,1.82,,Hospital
+352,9:40:38,8,Yes,1.08,,Metro Station
+353,2:38:34,9,No,2.12,,Metro Station
+354,20:06:19,6,Yes,0.81,,Restaurant
+355,9:11:44,10,Yes,0.41,,Public Street
+356,10:07:08,5,No,2.23,,Metro Station
+357,4:32:09,4,Yes,1.43,,Mall
+358,20:46:39,2,Yes,1.02,,Mall
+359,8:54:09,4,Yes,0.56,,Public Street
+360,8:15:15,7,Yes,0.32,,Hospital
+361,18:36:32,5,Yes,1.5,,Hospital
+362,19:48:27,7,Yes,0.55,,Hospital
+363,0:16:24,6,No,2.61,,Public Street
+364,11:27:52,4,No,2.34,,Metro Station
+365,7:37:43,7,No,2.71,,Public Street
+366,20:48:18,2,Yes,1.25,,Public Street
+367,5:35:25,8,Yes,0.67,,Mall
+368,11:22:03,10,Yes,1.92,,Mall
+369,4:08:23,5,Yes,0.31,,Mall
+370,20:45:25,7,No,2.29,,Mall
+371,7:13:03,5,Yes,0.63,,Public Street
+372,12:44:18,5,No,2.3,,Metro Station
+373,20:04:02,4,No,2.31,,Public Street
+374,19:29:06,8,Yes,0.89,,Hospital
+375,8:05:12,4,Yes,1.02,,Restaurant
+376,2:33:57,10,No,2.38,,Public Street
+377,1:02:10,10,Yes,0.3,,Metro Station
+378,8:52:41,2,No,2.27,,Hospital
+379,18:03:16,3,Yes,1.02,,Metro Station
+380,17:42:17,6,Yes,1.5,,Public Street
+381,0:51:50,8,No,2.24,,Hospital
+382,18:29:38,10,Yes,1.2,,Restaurant
+383,18:56:47,10,No,2.05,,Public Street
+384,8:14:58,5,Yes,1.7,,Metro Station
+385,0:41:11,6,Yes,1.81,,Hospital
+386,21:49:01,7,Yes,1.16,,Mall
+387,1:15:38,6,Yes,0.6,,Metro Station
+388,11:46:00,5,No,2.71,,Metro Station
+389,19:13:04,5,Yes,1.27,,Public Street
+390,10:41:43,4,Yes,1.25,,Restaurant
+391,4:44:36,5,Yes,1.54,,Restaurant
+392,13:31:29,10,Yes,1.78,,Metro Station
+393,19:39:09,10,Yes,1.22,,Mall
+394,18:28:36,10,Yes,0.83,,Hospital
+395,2:31:33,10,No,2.17,,Metro Station
+396,7:13:10,9,Yes,0.34,,Hospital
+397,13:08:05,3,Yes,1.61,,Mall
+398,0:37:51,7,Yes,0.55,,Hospital
+399,16:43:15,2,Yes,0.46,,Restaurant
+400,15:34:42,4,No,2.53,,Metro Station
+401,10:07:16,10,Yes,1.11,,Mall
+402,21:10:53,10,Yes,1.37,,Hospital
+403,10:36:00,8,Yes,0.32,,Hospital
+404,2:10:05,7,Yes,0.34,,Hospital
+405,20:34:30,9,Yes,0.85,,Metro Station
+406,7:21:53,3,Yes,1.32,,Public Street
+407,14:25:08,10,Yes,1.2,,Mall
+408,14:42:20,6,No,2.06,,Public Street
+409,3:39:44,6,No,2.73,,Metro Station
+410,14:30:29,7,No,2.21,,Metro Station
+411,15:10:46,10,Yes,1.23,,Hospital
+412,20:24:41,6,No,2.49,,Public Street
+413,13:42:53,3,No,2.02,,Metro Station
+414,1:02:23,6,No,2.9,,Public Street
+415,14:43:53,5,Yes,1.95,,Metro Station
+416,10:33:42,9,No,2.65,,Mall
+417,10:49:51,10,Yes,1.15,,Public Street
+418,23:13:10,10,Yes,1.17,,Hospital
+419,17:36:38,7,Yes,1.97,,Restaurant
+420,20:41:34,4,Yes,1.21,,Restaurant
+421,18:15:31,6,Yes,0.31,,Restaurant
+422,21:32:27,3,Yes,0.77,,Mall
+423,18:19:31,3,Yes,1.71,,Public Street
+424,15:51:27,4,Yes,1.43,,Public Street
+425,0:59:36,9,Yes,0.93,,Public Street
+426,4:11:31,5,No,2.38,,Hospital
+427,20:57:08,4,Yes,0.8,,Hospital
+428,5:22:05,6,Yes,1.14,,Mall
+429,12:29:53,8,No,2.42,,Metro Station
+430,2:52:03,10,Yes,1.69,,Restaurant
+431,2:03:22,2,Yes,0.81,,Mall
+432,11:24:01,8,Yes,0.4,,Public Street
+433,3:32:41,7,Yes,1.44,,Public Street
+434,8:34:49,6,Yes,0.36,,Public Street
+435,3:30:06,4,No,2.5,,Restaurant
+436,3:41:54,2,No,2.14,,Hospital
+437,11:31:22,7,Yes,1.7,,Public Street
+438,19:57:47,3,Yes,0.7,,Public Street
+439,17:01:46,3,Yes,1.75,,Metro Station
+440,1:22:00,3,No,2.01,,Restaurant
+441,22:18:23,9,No,2.82,,Public Street
+442,15:37:38,3,Yes,0.78,,Metro Station
+443,6:39:11,7,Yes,0.57,,Metro Station
+444,17:57:45,5,Yes,1.94,,Restaurant
+445,4:00:51,3,Yes,0.71,,Mall
+446,19:06:09,10,Yes,1.01,,Hospital
+447,13:24:53,5,No,2.61,,Metro Station
+448,9:05:04,2,Yes,1.72,,Hospital
+449,2:20:26,2,Yes,1.55,,Restaurant
+450,8:34:32,9,No,2.64,,Metro Station
+451,19:14:55,2,Yes,1.71,,Mall
+452,3:10:34,6,No,2.88,,Hospital
+453,11:33:33,8,Yes,1.88,,Metro Station
+454,12:44:10,2,Yes,1.52,,Restaurant
+455,21:03:34,10,Yes,1.27,,Mall
+456,7:41:04,3,No,2.89,,Mall
+457,0:28:38,6,Yes,1.26,,Hospital
+458,4:14:36,4,Yes,1.59,,Hospital
+459,22:27:47,9,Yes,1.38,,Hospital
+460,14:41:21,7,No,2.43,,Mall
+461,8:41:57,6,Yes,1.44,,Restaurant
+462,20:01:05,5,Yes,0.97,,Public Street
+463,6:21:41,10,Yes,0.85,,Hospital
+464,12:22:14,7,Yes,0.78,,Mall
+465,4:43:48,2,No,2.7,,Hospital
+466,11:17:40,9,Yes,1.2,,Mall
+467,10:48:39,6,No,2.51,,Public Street
+468,22:43:53,4,No,2.62,,Metro Station
+469,14:21:11,3,No,2.19,,Mall
+470,9:43:18,2,No,2.89,,Public Street
+471,0:27:31,2,No,2.82,,Metro Station
+472,12:47:01,4,No,2.42,,Restaurant
+473,11:34:45,7,Yes,1.79,,Mall
+474,9:18:48,7,No,2.82,,Hospital
+475,21:57:18,3,Yes,0.43,,Restaurant
+476,9:46:57,6,Yes,0.64,,Mall
+477,11:57:39,3,Yes,1.59,,Public Street
+478,12:55:20,6,No,2.88,,Hospital
+479,6:56:50,7,Yes,1.34,,Hospital
+480,6:27:03,4,No,2.36,,Public Street
+481,19:07:41,5,Yes,1.85,,Restaurant
+482,0:07:56,8,Yes,1.93,,Public Street
+483,19:19:07,10,Yes,1.2,,Restaurant
+484,14:54:46,6,Yes,1.8,,Mall
+485,5:34:05,9,Yes,0.76,,Metro Station
+486,21:42:49,10,No,2.35,,Metro Station
+487,4:00:23,2,Yes,1.96,,Metro Station
+488,18:41:12,7,Yes,0.48,,Restaurant
+489,21:55:51,8,Yes,1.7,,Public Street
+490,0:57:53,4,Yes,0.78,,Mall
+491,12:47:11,5,Yes,0.49,,Metro Station
+492,18:18:46,3,Yes,0.61,,Mall
+493,20:20:18,4,Yes,1.22,,Restaurant
+494,17:28:31,4,Yes,0.3,,Hospital
+495,11:15:27,10,No,2.56,,Metro Station
+496,21:50:57,10,No,2.87,,Hospital
+497,13:50:25,9,Yes,1.68,,Mall
+498,17:18:56,5,Yes,1.97,,Restaurant
+499,12:12:22,6,Yes,1.61,,Restaurant
+500,13:03:30,7,Yes,1.49,,Public Street
+501,14:50:41,3,Yes,1.86,,Restaurant
+502,10:47:32,9,Yes,1.78,,Metro Station
+503,12:30:20,6,Yes,1.79,,Hospital
+504,10:26:19,3,No,2.75,,Metro Station
+505,3:24:00,6,No,2.59,,Restaurant
+506,17:27:20,5,Yes,1.71,,Mall
+507,2:07:52,9,No,2.41,,Public Street
+508,0:29:08,3,No,2.92,,Mall
+509,6:16:04,8,Yes,1.43,,Restaurant
+510,12:33:52,9,Yes,1.58,,Mall
+511,19:41:05,10,Yes,1.59,,Restaurant
+512,17:01:27,2,No,2.65,,Mall
+513,2:08:52,6,No,2.72,,Public Street
+514,15:50:50,8,No,2.22,,Public Street
+515,11:04:08,10,Yes,1.43,,Public Street
+516,2:11:40,8,Yes,1.22,,Public Street
+517,23:51:11,4,Yes,0.78,,Metro Station
+518,11:38:59,5,Yes,0.91,,Mall
+519,22:44:34,9,Yes,0.23,,Restaurant
+520,23:09:17,6,Yes,1.89,,Metro Station
+521,12:34:07,9,Yes,0.77,,Restaurant
+522,22:51:02,4,Yes,1.15,,Public Street
+523,5:38:58,2,Yes,1.31,,Public Street
+524,7:44:28,3,Yes,1.85,,Hospital
+525,21:05:37,7,Yes,0.89,,Metro Station
+526,22:41:32,9,Yes,1.43,,Mall
+527,7:37:54,10,No,2.76,,Mall
+528,23:00:38,3,Yes,0.3,,Public Street
+529,9:09:23,2,No,2.31,,Metro Station
+530,0:02:35,4,Yes,1.55,,Metro Station
+531,1:16:46,7,Yes,0.51,,Hospital
+532,19:10:44,9,Yes,1.91,,Restaurant
+533,23:17:54,3,Yes,0.62,,Mall
+534,10:05:37,2,Yes,1.3,,Restaurant
+535,8:04:52,4,No,2.82,,Restaurant
+536,4:07:59,9,No,2.36,,Metro Station
+537,16:26:26,2,No,2.22,,Hospital
+538,4:59:19,9,No,3,,Hospital
+539,14:19:50,4,Yes,0.46,,Hospital
+540,21:59:18,3,Yes,1.78,,Mall
+541,13:54:40,5,Yes,0.74,,Mall
+542,14:44:07,7,No,2.28,,Mall
+543,6:09:30,8,No,2.55,,Restaurant
+544,6:00:30,2,Yes,0.57,,Public Street
+545,8:06:48,8,Yes,0.72,,Restaurant
+546,9:13:40,9,Yes,0.35,,Hospital
+547,6:56:14,4,Yes,1.35,,Hospital
+548,11:40:29,2,No,2.84,,Public Street
+549,1:08:26,3,No,2.24,,Mall
+550,13:57:05,9,Yes,0.22,,Restaurant
+551,7:09:02,4,Yes,1.92,,Hospital
+552,23:35:45,9,Yes,1.79,,Public Street
+553,7:46:12,6,Yes,0.47,,Metro Station
+554,22:27:56,9,No,2.71,,Mall
+555,19:51:22,4,No,2.01,,Public Street
+556,16:33:12,3,No,2.96,,Hospital
+557,19:23:30,7,Yes,1.18,,Public Street
+558,3:15:09,6,Yes,0.29,,Public Street
+559,17:53:09,8,No,2.02,,Hospital
+560,10:49:34,6,Yes,1.03,,Mall
+561,17:22:25,8,Yes,1.87,,Restaurant
+562,16:18:45,6,No,2.86,,Hospital
+563,23:41:02,5,Yes,0.49,,Metro Station
+564,15:16:01,3,No,2.24,,Metro Station
+565,2:21:23,3,Yes,0.89,,Metro Station
+566,18:15:59,9,Yes,0.22,,Hospital
+567,6:44:16,4,Yes,1.27,,Metro Station
+568,3:32:21,10,Yes,1.06,,Hospital
+569,21:46:36,10,Yes,1.29,,Hospital
+570,23:48:57,8,Yes,1.26,,Public Street
+571,19:41:12,6,No,2.79,,Hospital
+572,3:09:39,9,No,2.59,,Public Street
+573,23:20:59,5,No,2.18,,Metro Station
+574,5:55:56,8,Yes,1.99,,Public Street
+575,20:40:56,9,No,2.14,,Metro Station
+576,4:07:15,4,Yes,1.03,,Restaurant
+577,7:20:15,10,No,2.82,,Mall
+578,13:56:04,5,Yes,0.23,,Mall
+579,5:55:04,8,Yes,1.89,,Metro Station
+580,7:15:13,2,No,2.12,,Public Street
+581,6:58:25,6,No,2.84,,Public Street
+582,19:30:49,7,Yes,1.99,,Restaurant
+583,21:35:49,2,No,2.65,,Metro Station
+584,19:55:24,7,Yes,1.43,,Metro Station
+585,6:59:19,10,Yes,0.85,,Hospital
+586,13:13:31,6,Yes,0.24,,Public Street
+587,0:23:27,6,Yes,1.29,,Hospital
+588,9:04:16,5,No,2.67,,Public Street
+589,16:48:40,9,Yes,0.93,,Restaurant
+590,20:01:24,7,Yes,1.53,,Restaurant
+591,9:57:57,2,Yes,1.92,,Metro Station
+592,19:33:55,4,No,2.53,,Hospital
+593,15:23:31,3,Yes,0.29,,Hospital
+594,7:41:28,6,No,2.78,,Mall
+595,19:46:46,6,Yes,0.66,,Restaurant
+596,15:35:29,3,Yes,1.05,,Public Street
+597,3:44:22,5,No,2.44,,Mall
+598,12:51:01,7,No,2.71,,Restaurant
+599,8:21:14,3,No,2.09,,Restaurant
+600,18:19:19,3,Yes,1.89,,Metro Station
+601,1:48:22,10,No,2.32,,Restaurant
+602,23:54:29,2,Yes,0.92,,Mall
+603,6:52:08,3,Yes,0.71,,Restaurant
+604,2:33:40,7,Yes,0.25,,Hospital
+605,0:51:53,5,No,2.46,,Public Street
+606,12:13:37,10,Yes,0.76,,Public Street
+607,23:10:03,3,Yes,1.05,,Restaurant
+608,20:47:32,10,No,2.91,,Restaurant
+609,13:34:55,5,No,2.28,,Public Street
+610,3:15:30,8,Yes,0.96,,Metro Station
+611,11:58:39,3,No,2.63,,Metro Station
+612,14:00:01,2,No,2.77,,Public Street
+613,16:39:50,5,Yes,0.86,,Metro Station
+614,10:39:53,3,No,2.68,,Metro Station
+615,8:36:26,3,Yes,0.68,,Metro Station
+616,10:53:54,10,No,2.77,,Public Street
+617,19:54:58,6,No,2.48,,Public Street
+618,13:59:57,3,No,3,,Metro Station
+619,23:46:52,3,No,2.54,,Restaurant
+620,15:00:06,2,Yes,1.64,,Hospital
+621,9:18:29,3,No,2.61,,Hospital
+622,0:38:15,5,Yes,1.68,,Hospital
+623,12:33:22,2,Yes,0.88,,Restaurant
+624,11:31:39,2,Yes,0.51,,Mall
+625,8:55:17,9,Yes,0.71,,Metro Station
+626,15:10:50,2,No,2.36,,Restaurant
+627,10:17:19,3,Yes,1.86,,Public Street
+628,15:44:19,6,Yes,0.24,,Metro Station
+629,20:51:10,9,Yes,1.53,,Restaurant
+630,4:13:51,4,Yes,1.26,,Mall
+631,23:53:40,2,Yes,0.89,,Public Street
+632,8:07:16,8,Yes,1.07,,Mall
+633,7:17:56,6,No,2.13,,Restaurant
+634,11:07:41,3,No,2.65,,Public Street
+635,7:58:15,3,Yes,1.6,,Hospital
+636,9:08:03,10,Yes,0.6,,Hospital
+637,21:59:38,3,Yes,1.8,,Restaurant
+638,21:01:01,9,Yes,0.92,,Hospital
+639,8:17:32,4,Yes,0.27,,Metro Station
+640,19:43:35,7,Yes,0.29,,Metro Station
+641,15:22:49,7,Yes,1.47,,Metro Station
+642,17:56:54,6,Yes,0.78,,Restaurant
+643,6:18:16,7,Yes,0.95,,Restaurant
+644,22:32:16,3,No,2.82,,Restaurant
+645,1:42:11,4,Yes,1.89,,Hospital
+646,13:51:23,10,No,2.39,,Mall
+647,12:16:47,6,No,2.8,,Hospital
+648,6:42:04,3,Yes,0.93,,Hospital
+649,23:05:38,9,Yes,0.41,,Hospital
+650,6:08:28,4,No,2.94,,Public Street
+651,9:18:10,10,No,2.81,,Restaurant
+652,16:03:50,8,No,2.5,,Hospital
+653,7:25:16,10,Yes,1.05,,Restaurant
+654,12:26:41,3,No,2.06,,Hospital
+655,10:00:42,10,Yes,0.53,,Hospital
+656,17:28:34,5,No,2.55,,Public Street
+657,23:01:35,4,Yes,0.88,,Restaurant
+658,23:44:27,9,Yes,0.45,,Public Street
+659,17:56:34,7,No,2.27,,Public Street
+660,20:06:37,9,Yes,1.39,,Restaurant
+661,16:27:21,8,Yes,1.54,,Hospital
+662,15:42:36,7,No,2.6,,Hospital
+663,4:11:01,2,Yes,1.47,,Restaurant
+664,10:25:49,5,No,2.54,,Metro Station
+665,17:37:01,6,Yes,0.93,,Public Street
+666,22:27:21,3,No,2.79,,Public Street
+667,11:38:14,10,Yes,0.8,,Mall
+668,18:42:52,3,Yes,0.77,,Mall
+669,6:01:09,5,No,2.47,,Mall
+670,23:41:25,6,Yes,0.52,,Public Street
+671,9:48:25,3,No,2.21,,Public Street
+672,15:14:35,8,No,2.83,,Metro Station
+673,6:19:24,4,No,2.07,,Hospital
+674,17:40:46,5,Yes,1.53,,Metro Station
+675,6:31:46,3,Yes,0.26,,Public Street
+676,7:07:24,10,Yes,1.79,,Metro Station
+677,21:41:37,2,No,2.39,,Restaurant
+678,5:48:38,4,Yes,1.8,,Hospital
+679,0:06:05,6,No,2.2,,Metro Station
+680,6:14:18,8,No,2.68,,Mall
+681,10:05:20,5,Yes,1,,Restaurant
+682,16:56:39,5,Yes,1.53,,Metro Station
+683,13:56:11,2,No,2.52,,Public Street
+684,1:35:55,3,No,2.73,,Mall
+685,19:38:39,3,Yes,1.44,,Public Street
+686,18:50:34,7,No,2.39,,Public Street
+687,0:37:44,10,No,2.76,,Mall
+688,7:27:45,9,No,2.29,,Mall
+689,11:08:39,7,Yes,1.68,,Metro Station
+690,4:09:22,2,No,2.12,,Restaurant
+691,20:11:28,7,Yes,1.76,,Public Street
+692,0:28:17,9,Yes,1.75,,Hospital
+693,8:36:14,4,No,2.66,,Metro Station
+694,2:11:53,3,No,2.13,,Metro Station
+695,4:03:11,2,Yes,1.31,,Hospital
+696,8:32:39,6,Yes,1.03,,Restaurant
+697,7:19:18,9,Yes,0.31,,Mall
+698,9:10:58,6,No,2.15,,Mall
+699,5:22:46,10,Yes,1.77,,Hospital
+700,17:32:32,2,No,2.83,,Restaurant
+701,23:41:17,5,No,2.08,,Mall
+702,6:17:18,10,Yes,1.26,,Hospital
+703,19:46:08,6,Yes,1.56,,Restaurant
+704,20:19:39,10,No,2.89,,Metro Station
+705,2:43:31,2,No,2.68,,Hospital
+706,5:25:12,3,Yes,0.29,,Mall
+707,22:28:29,5,No,2.68,,Metro Station
+708,11:33:14,2,Yes,0.81,,Mall
+709,9:38:27,2,Yes,0.31,,Hospital
+710,22:04:56,7,Yes,0.49,,Public Street
+711,23:06:11,7,No,2.96,,Restaurant
+712,22:57:44,4,Yes,0.97,,Hospital
+713,22:07:06,6,Yes,1.49,,Mall
+714,3:46:29,5,Yes,1.56,,Metro Station
+715,19:52:12,3,No,2.87,,Hospital
+716,20:10:31,8,No,2.29,,Metro Station
+717,1:22:36,2,No,2.86,,Mall
+718,4:06:10,5,Yes,1.37,,Mall
+719,23:41:26,8,Yes,1.7,,Hospital
+720,19:49:09,7,Yes,1.08,,Hospital
+721,7:58:08,10,Yes,1.8,,Mall
+722,15:12:16,5,Yes,1.19,,Metro Station
+723,4:19:44,10,No,2.21,,Public Street
+724,7:31:20,9,Yes,0.23,,Mall
+725,10:16:30,4,Yes,0.26,,Metro Station
+726,5:57:49,8,No,2.47,,Public Street
+727,18:56:20,3,No,2.65,,Restaurant
+728,18:07:04,10,Yes,1.81,,Restaurant
+729,1:02:59,2,Yes,1.68,,Metro Station
+730,21:59:00,4,No,2.31,,Restaurant
+731,11:23:50,3,Yes,1.61,,Metro Station
+732,4:31:42,5,Yes,0.98,,Hospital
+733,17:21:35,2,Yes,1.39,,Hospital
+734,21:35:13,3,Yes,1.38,,Mall
+735,23:50:50,7,Yes,1.43,,Metro Station
+736,8:13:02,6,Yes,1.21,,Restaurant
+737,17:07:12,2,Yes,0.46,,Hospital
+738,1:01:44,6,Yes,1.06,,Restaurant
+739,10:38:36,7,Yes,0.49,,Mall
+740,2:04:32,5,Yes,1.91,,Metro Station
+741,13:37:18,7,Yes,0.55,,Hospital
+742,16:40:11,7,Yes,0.26,,Metro Station
+743,4:36:04,8,Yes,1.64,,Mall
+744,13:29:42,10,Yes,1.7,,Hospital
+745,9:55:32,5,Yes,0.28,,Hospital
+746,1:34:33,10,No,2.77,,Public Street
+747,2:24:09,7,Yes,1.84,,Mall
+748,11:28:00,3,No,2.06,,Public Street
+749,15:41:54,5,No,2.09,,Public Street
+750,2:37:41,2,No,2.05,,Public Street
+751,8:49:27,6,No,2.43,,Mall
+752,6:18:21,7,No,2.96,,Public Street
+753,5:37:02,3,Yes,0.61,,Hospital
+754,18:19:07,10,Yes,1.71,,Restaurant
+755,1:01:32,9,No,2.51,,Mall
+756,11:01:03,10,Yes,1.37,,Metro Station
+757,6:44:57,9,No,2.73,,Public Street
+758,14:52:17,10,Yes,1.46,,Restaurant
+759,2:21:02,4,Yes,1.19,,Mall
+760,7:04:31,6,Yes,0.86,,Hospital
+761,13:56:22,10,Yes,0.78,,Hospital
+762,16:21:32,3,No,2.26,,Mall
+763,10:15:50,4,Yes,0.94,,Mall
+764,15:05:41,6,Yes,1.21,,Mall
+765,23:07:27,8,No,2.08,,Restaurant
+766,15:47:20,10,Yes,1.59,,Hospital
+767,11:04:51,3,Yes,0.28,,Metro Station
+768,2:05:25,10,No,2.85,,Metro Station
+769,14:42:45,8,No,2.79,,Hospital
+770,19:42:20,2,Yes,1.29,,Restaurant
+771,13:35:32,4,No,2.78,,Restaurant
+772,16:34:55,3,Yes,0.32,,Public Street
+773,3:55:36,8,Yes,0.83,,Hospital
+774,8:55:26,7,Yes,0.55,,Mall
+775,8:43:44,7,No,2.06,,Mall
+776,8:54:50,6,Yes,0.64,,Restaurant
+777,7:19:28,9,Yes,0.47,,Public Street
+778,6:07:07,10,No,2.71,,Public Street
+779,14:55:30,6,Yes,0.71,,Mall
+780,22:23:38,10,Yes,0.75,,Metro Station
+781,19:12:07,2,No,2.4,,Mall
+782,22:10:52,3,No,2.74,,Metro Station
+783,0:38:55,4,Yes,0.63,,Restaurant
+784,6:48:19,9,Yes,0.39,,Restaurant
+785,20:02:13,9,Yes,1.67,,Metro Station
+786,18:57:27,3,No,2.59,,Public Street
+787,13:32:34,6,Yes,1.63,,Metro Station
+788,7:25:58,5,Yes,1.87,,Restaurant
+789,0:45:57,8,Yes,0.78,,Public Street
+790,17:37:32,3,No,2.62,,Restaurant
+791,6:19:13,6,Yes,0.71,,Hospital
+792,17:36:21,3,Yes,1.87,,Mall
+793,20:11:22,9,Yes,1.06,,Metro Station
+794,19:29:55,5,Yes,0.87,,Mall
+795,21:39:20,6,Yes,0.48,,Public Street
+796,6:04:05,10,Yes,0.98,,Metro Station
+797,0:38:42,10,No,2.35,,Metro Station
+798,16:21:45,10,Yes,0.28,,Hospital
+799,18:27:53,9,Yes,1.06,,Mall
+800,22:59:40,4,No,2.54,,Mall
+801,19:21:45,3,Yes,0.4,,Restaurant
+802,18:43:47,7,Yes,1.75,,Restaurant
+803,2:33:00,4,Yes,1.02,,Restaurant
+804,20:57:34,7,No,2.55,,Public Street
+805,12:45:22,2,Yes,0.69,,Metro Station
+806,7:41:28,9,Yes,1.02,,Mall
+807,17:40:51,2,Yes,1.33,,Mall
+808,18:55:55,10,Yes,1.32,,Metro Station
+809,20:25:52,3,Yes,1.99,,Hospital
+810,6:08:40,7,Yes,1.95,,Public Street
+811,15:35:02,6,Yes,0.66,,Metro Station
+812,12:56:40,6,Yes,0.86,,Public Street
+813,2:55:48,5,Yes,0.55,,Hospital
+814,14:30:13,4,No,2.49,,Public Street
+815,15:01:29,8,No,2.67,,Hospital
+816,5:31:52,2,No,2.46,,Restaurant
+817,5:25:03,4,Yes,0.99,,Metro Station
+818,20:17:09,7,Yes,0.22,,Public Street
+819,10:58:57,3,Yes,0.48,,Public Street
+820,23:49:32,7,Yes,0.75,,Hospital
+821,8:17:53,5,Yes,1.98,,Metro Station
+822,21:05:01,9,Yes,1.32,,Metro Station
+823,13:36:37,9,Yes,1.15,,Metro Station
+824,10:46:54,3,No,2.21,,Restaurant
+825,16:11:14,9,No,2.83,,Restaurant
+826,14:44:12,2,Yes,1.18,,Hospital
+827,21:13:14,7,Yes,0.31,,Metro Station
+828,19:18:01,3,No,2.95,,Restaurant
+829,3:03:28,10,Yes,0.98,,Hospital
+830,8:43:52,2,Yes,1.71,,Restaurant
+831,20:24:23,9,Yes,1.62,,Mall
+832,13:47:14,6,Yes,1.03,,Metro Station
+833,10:13:20,3,Yes,1.87,,Public Street
+834,5:01:57,2,No,2.59,,Public Street
+835,1:43:36,7,No,2.79,,Restaurant
+836,0:30:04,7,No,2.51,,Hospital
+837,20:10:59,2,Yes,1.39,,Mall
+838,12:34:40,7,Yes,1.81,,Public Street
+839,2:57:59,2,Yes,0.52,,Mall
+840,14:11:02,9,Yes,1.79,,Restaurant
+841,16:41:48,7,Yes,0.95,,Restaurant
+842,19:45:40,7,Yes,1.95,,Restaurant
+843,23:34:29,3,No,2.2,,Mall
+844,12:39:46,10,No,2.17,,Restaurant
+845,20:52:52,3,No,2.16,,Public Street
+846,0:24:35,6,Yes,1.78,,Mall
+847,17:52:12,10,No,2.67,,Public Street
+848,21:24:22,10,Yes,1.71,,Metro Station
+849,7:27:22,7,No,2.93,,Metro Station
+850,4:32:55,9,Yes,0.33,,Restaurant
+851,3:15:19,4,Yes,0.9,,Public Street
+852,17:28:58,8,No,2.66,,Metro Station
+853,13:06:11,5,Yes,1.72,,Restaurant
+854,23:33:47,2,No,2.62,,Hospital
+855,0:02:02,8,No,2.67,,Hospital
+856,10:32:51,4,No,2.35,,Metro Station
+857,19:04:18,4,Yes,1.14,,Public Street
+858,20:58:55,6,Yes,1.7,,Public Street
+859,7:14:55,10,No,2.99,,Hospital
+860,2:00:23,5,No,2.67,,Metro Station
+861,17:05:07,3,Yes,1.42,,Public Street
+862,0:29:45,9,Yes,0.73,,Hospital
+863,13:18:55,9,Yes,1.14,,Metro Station
+864,23:46:27,6,No,2.87,,Public Street
+865,11:03:06,7,Yes,1.33,,Restaurant
+866,3:41:40,9,No,2.07,,Restaurant
+867,23:49:28,4,Yes,1.19,,Metro Station
+868,9:14:41,10,Yes,0.41,,Metro Station
+869,2:02:32,2,Yes,0.77,,Metro Station
+870,22:27:54,8,Yes,1.76,,Mall
+871,23:52:26,5,Yes,0.37,,Public Street
+872,15:22:59,5,No,2.07,,Mall
+873,1:56:56,4,Yes,0.57,,Metro Station
+874,2:58:10,7,No,2.2,,Metro Station
+875,17:31:19,8,No,2.02,,Public Street
+876,19:43:09,6,No,2.89,,Metro Station
+877,18:11:10,9,Yes,1.77,,Mall
+878,18:51:05,5,Yes,0.81,,Metro Station
+879,7:24:34,9,Yes,1,,Restaurant
+880,6:42:04,9,Yes,0.22,,Mall
+881,10:18:08,10,No,2.13,,Restaurant
+882,3:22:00,9,Yes,0.92,,Mall
+883,11:11:30,9,Yes,1.21,,Public Street
+884,22:37:20,9,Yes,1.3,,Metro Station
+885,22:57:07,8,Yes,0.99,,Mall
+886,23:59:32,9,Yes,1.67,,Hospital
+887,9:06:06,7,No,2.63,,Restaurant
+888,1:12:36,7,Yes,0.73,,Mall
+889,15:19:10,9,Yes,0.93,,Mall
+890,17:44:14,7,Yes,1.72,,Public Street
+891,12:20:09,4,Yes,1.43,,Hospital
+892,20:45:22,8,No,2.65,,Metro Station
+893,10:45:20,8,Yes,0.25,,Mall
+894,2:27:48,6,Yes,0.85,,Metro Station
+895,20:47:48,5,Yes,0.82,,Metro Station
+896,1:30:11,9,No,2.65,,Hospital
+897,0:22:24,5,No,2.52,,Restaurant
+898,22:56:37,6,No,2.88,,Hospital
+899,3:15:03,5,Yes,1.45,,Restaurant
+900,7:04:42,2,Yes,1.39,,Hospital
+901,1:10:10,4,Yes,1.92,,Mall
+902,13:23:50,5,Yes,1.95,,Restaurant
+903,6:07:50,6,Yes,0.58,,Metro Station
+904,8:34:19,5,No,2.79,,Hospital
+905,1:56:22,4,No,2.99,,Restaurant
+906,19:17:39,5,No,2.8,,Restaurant
+907,6:04:15,10,Yes,0.68,,Metro Station
+908,16:41:55,9,Yes,1.36,,Restaurant
+909,5:28:00,9,Yes,1.63,,Metro Station
+910,19:56:17,4,Yes,0.29,,Mall
+911,14:52:03,7,Yes,0.81,,Restaurant
+912,14:23:29,5,Yes,1.63,,Mall
+913,13:23:53,2,Yes,1.19,,Metro Station
+914,2:07:22,7,Yes,1.04,,Metro Station
+915,13:05:13,5,No,2.31,,Mall
+916,9:53:26,8,No,2.63,,Metro Station
+917,17:16:49,10,Yes,1.51,,Restaurant
+918,8:15:40,3,No,2.3,,Metro Station
+919,18:31:04,3,No,2.78,,Mall
+920,19:01:26,10,Yes,1.46,,Public Street
+921,15:14:18,9,No,2.68,,Restaurant
+922,6:04:55,2,No,2.01,,Restaurant
+923,5:43:21,8,No,2.85,,Public Street
+924,14:06:25,7,Yes,0.44,,Hospital
+925,1:13:41,3,No,2.33,,Metro Station
+926,22:14:26,10,No,2.28,,Public Street
+927,17:01:13,2,Yes,1.51,,Mall
+928,23:30:19,5,No,2.15,,Public Street
+929,9:48:19,8,No,2.56,,Public Street
+930,23:04:30,4,No,2.93,,Restaurant
+931,8:02:25,10,No,2.48,,Hospital
+932,2:04:08,7,Yes,1.29,,Metro Station
+933,16:24:56,4,No,2.77,,Restaurant
+934,4:11:49,9,No,2.52,,Mall
+935,11:33:13,8,No,2.61,,Metro Station
+936,16:06:01,2,No,2.56,,Restaurant
+937,9:51:35,6,Yes,0.58,,Metro Station
+938,5:02:50,9,No,2.45,,Hospital
+939,2:43:57,3,Yes,1.02,,Metro Station
+940,4:44:02,5,Yes,0.78,,Mall
+941,4:27:15,5,Yes,1.7,,Mall
+942,11:30:18,4,Yes,1.98,,Restaurant
+943,8:41:01,2,Yes,1.04,,Mall
+944,15:21:31,8,No,2.67,,Metro Station
+945,16:39:57,2,Yes,0.61,,Hospital
+946,23:50:14,3,Yes,1.95,,Mall
+947,20:07:46,10,Yes,0.6,,Restaurant
+948,21:16:12,2,No,2.21,,Hospital
+949,5:19:47,10,No,2.2,,Restaurant
+950,14:02:42,6,No,2.49,,Restaurant
+951,17:21:02,6,Yes,0.98,,Hospital
+952,2:00:42,3,Yes,0.51,,Mall
+953,3:55:31,10,Yes,0.91,,Metro Station
+954,8:21:30,10,No,2.8,,Restaurant
+955,13:41:37,7,No,2.51,,Public Street
+956,20:46:54,10,Yes,1.31,,Restaurant
+957,0:11:53,2,Yes,0.76,,Restaurant
+958,14:55:35,6,Yes,1.37,,Mall
+959,3:49:51,8,Yes,0.83,,Restaurant
+960,2:12:11,6,No,2.53,,Restaurant
+961,23:43:04,2,Yes,1.83,,Mall
+962,16:05:17,8,No,2.86,,Hospital
+963,19:45:04,9,No,2.94,,Mall
+964,22:38:46,10,Yes,1.6,,Metro Station
+965,22:04:32,6,No,2.81,,Restaurant
+966,11:14:32,4,No,2.16,,Mall
+967,12:55:40,6,No,2.1,,Public Street
+968,12:09:53,6,No,3,,Public Street
+969,20:06:08,7,No,2.9,,Mall
+970,18:39:30,4,Yes,1.69,,Mall
+971,23:58:04,3,Yes,0.7,,Metro Station
+972,7:15:17,5,Yes,0.85,,Hospital
+973,6:32:34,5,Yes,1.21,,Mall
+974,11:46:42,9,Yes,0.47,,Mall
+975,0:34:39,10,No,2.77,,Public Street
+976,22:45:28,6,Yes,1.13,,Hospital
+977,2:28:23,3,Yes,0.82,,Mall
+978,10:51:57,7,Yes,1.07,,Public Street
+979,8:58:24,3,No,2.98,,Metro Station
+980,16:39:50,4,No,2.48,,Restaurant
+981,17:32:15,10,Yes,1.66,,Mall
+982,5:31:38,4,Yes,0.39,,Restaurant
+983,1:25:36,4,Yes,0.98,,Hospital
+984,1:19:12,2,Yes,1.27,,Public Street
+985,8:52:18,5,Yes,1.42,,Mall
+986,17:41:35,2,Yes,0.94,,Public Street
+987,17:25:06,6,Yes,1.24,,Public Street
+988,9:10:29,4,No,2.65,,Mall
+989,2:58:33,4,Yes,0.98,,Metro Station
+990,13:16:25,4,Yes,0.65,,Restaurant
+991,20:46:26,5,No,2.16,,Hospital
+992,17:02:39,2,Yes,1.17,,Metro Station
+993,16:39:51,10,Yes,0.57,,Public Street
+994,15:44:55,4,Yes,1.31,,Public Street
+995,6:32:34,9,Yes,1.59,,Mall
+996,17:25:23,7,Yes,1.45,,Public Street
+997,15:10:46,8,Yes,1.57,,Hospital
+998,12:02:35,6,No,2.11,,Restaurant
+999,18:55:18,5,Yes,1.09,,Metro Station
+1000,5:56:15,10,No,2.32,,Mall
+1001,2:46:30,3,Yes,0.52,,Restaurant
+1002,10:52:43,3,No,2.67,,Public Street
+1003,9:57:48,9,No,2.8,,Metro Station
+1004,1:56:16,6,No,2.84,,Public Street
+1005,19:12:14,6,No,2.41,,Public Street
+1006,21:50:15,3,Yes,1.93,,Metro Station
+1007,18:58:30,10,Yes,0.58,,Mall
+1008,5:20:38,4,No,2.6,,Public Street
