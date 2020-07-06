@@ -7,24 +7,20 @@ import dash_player as player
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 import plotly.io as pio
 import pandas as pd
+from lib import livingdemo, stats
+
 
 PLOTLY_LOGO = "https://correlation1-public.s3-us-west-2.amazonaws.com/training/COLOMBIA+MAIN+SANS+TAG.svg"
 
+###############################################################
+#Load and modify the data that will be used in the app.
+#################################################################
 df1=pd.read_csv("data/sample_db.csv")
 df1['hour']=pd.to_datetime(df1['Time']).dt.hour
 df1['total distance']=df1['Number of observations']*df1['Average distance']
 #chart 1. Time of the day vs Number of violations and number of compliant observations
 df2=df1.groupby(["hour","Violations"]).sum().reset_index().drop(columns=['Average distance','Location','Record'])
 df2['Average Distance']=df2['total distance']/df2['Number of observations']
-
-
-
-
-
-
-
-
-
 
 
 navbar = dbc.Navbar(
@@ -50,8 +46,21 @@ navbar = dbc.Navbar(
 tab2_content = dbc.Card(
     dbc.CardBody(
         [
-            html.P("This is tab 1!", className="card-text"),
-            dbc.Button("Click here", color="success"),
+        dbc.Container([
+            dbc.Row(
+                [
+                    dbc.Col(stats.graph1, md=6),
+                    dbc.Col(stats.graph2, md=6),
+                ]
+            ),
+            dbc.Row(
+                [
+                    dbc.Col(stats.graph3, md=6),
+                    dbc.Col(stats.graph4, md=6),
+                ]
+            ),
+        ], fluid=True
+        ),
         ]
     ),
     className="mt-3",
@@ -60,54 +69,17 @@ tab2_content = dbc.Card(
 tab1_content = dbc.Card(
     dbc.CardBody(
         [
-            dbc.Col(html.Div(dbc.Alert("This is one column", color="primary"))),
             dbc.Row([
-                 dbc.Col(html.Div(dbc.Alert("One of three columns", color="primary")), md=6)
-                 , dbc.Col(html.Div(dbc.Alert("One of three columns", color="primary")), md=4)
-                 , dbc.Col(html.Div(dbc.Alert("One of three columns", color="primary")), md=2)
-                 , html.Div(children=player.DashPlayer(
-                    id = 'video_player',
-                    url = 'https://www.youtube.com/watch?v=0lBjcaMokvo',
-                    controls = True,
-                    playing = False,
-                    width = '600px',
-                    height = '400px'
+                dbc.Col([
+                livingdemo.video,
+                html.Hr(),
+                html.Label('Select video to Observe'),
+                livingdemo.dropdownvideo,
 
-                 )),
-                 
-
-
-
-        ]),
-        dbc.Row([
-            dbc.Col(html.Div(
-                                className='control-element',
-                                children=[
-                                    html.Div(children=["Footage Selection:"], style={'width': '40%'}),
-                                    dcc.Dropdown(
-                                        id="dropdown-footage-selection",
-                                        options=[
-                                            {'label': 'Drone recording of canal festival',
-                                            'value': 'DroneCanalFestival'},
-                                            {'label': 'Drone recording of car festival', 'value': 'car_show_drone'},
-                                            {'label': 'Drone recording of car festival #2',
-                                            'value': 'DroneCarFestival2'},
-                                            {'label': 'Drone recording of a farm', 'value': 'FarmDrone'},
-                                            {'label': 'Lion fighting Zebras', 'value': 'zebra'},
-                                            {'label': 'Man caught by a CCTV', 'value': 'ManCCTV'},
-                                            {'label': 'Man driving expensive car', 'value': 'car_footage'},
-                                            {'label': 'Restaurant Robbery', 'value': 'RestaurantHoldup'},
-                                            {'label': 'Social distancing detector', 'value': 'social_distancing'}
-                                        ],
-                                        value='social_distancing',
-                                        clearable=False,
-                                        style={'width': '60%'}
-                                    )
-                                ]
-                ), md=12)
-
-
-        ])
+                ], width = 6),
+            ]),
+           
+        
         ]
     ),
     className="mt-3",
@@ -125,7 +97,11 @@ tabs = dbc.Tabs(
 
 
 
-
+###########################################################
+#
+#           APP LAYOUT:
+#
+###########################################################
 body = html.Div([
     
     
