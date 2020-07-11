@@ -51,7 +51,7 @@ tab2_content = dbc.Card(
             [dbc.Col(html.Label('Violations',style={'font-weight': 'bold','font-size':'90%'}),width='0.8'),
              dbc.Col(stats.yes_no_filter,width='auto'),
              dbc.Col(html.Label('Time of the Day',style={'font-weight': 'bold','font-size':'90%'}),width='1.5'),
-             dbc.Col(stats.hour_slicer,width='5'),
+             dbc.Col(stats.hour_slicer,width='4'),
              dbc.Col(html.Label('Type of Location',style={'font-weight': 'bold','font-size':'90%'}),width='1.5'),
              dbc.Col(stats.location_filter)
             ]),
