@@ -47,3 +47,36 @@ graph2 = dcc.Graph(figure=time_fig,id='time_fig')
 graph3 = dcc.Graph(figure=loc_pie,id='loc_pie')
 graph4 = dcc.Graph(figure=loc_hist,id='loc_hist')
 
+yes_no_filter=dcc.Checklist(
+    id='yes_no_filter',
+    options=[
+        {'label': 'Yes', 'value': 'Yes'},
+        {'label': 'No', 'value': 'No'}
+    ],
+    value=['Yes','No'],
+    labelStyle={'display': 'inline-block'},
+    style={'font-size':'90%'}
+)
+
+hour_slicer=dcc.RangeSlider(
+    id='hour_slicer',
+    min=0,
+    max=23,
+    step=1,
+    dots=True,
+    value=[0,23],
+    marks={0:'0:00',4:'4:00',8:'8:00',12:'12:00',16:'16:00',20:'20:00'}
+)
+
+location_filter=dcc.Checklist(
+    id='location_filter',
+    options=[
+        {'label': 'Metro Station', 'value': 'Metro Station'},
+        {'label': 'Hospital', 'value': 'Hospital'},
+        {'label': 'Mall', 'value': 'Mall'},
+        {'label': 'Restaurant', 'value': 'Restaurant'},
+        {'label': 'Public Street', 'value': 'Public Street'}
+    ],
+    value=['Metro Station','Mall','Restaurant','Public Street','Hospital'],
+    style={'font-size':'90%'}
+)
