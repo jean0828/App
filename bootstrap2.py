@@ -7,6 +7,7 @@ import dash_player as player
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 import plotly.io as pio
 import pandas as pd
+import plotly.express as px
 from lib import livingdemo, stats
 
 
