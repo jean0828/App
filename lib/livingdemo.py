@@ -34,11 +34,11 @@ video = html.Div([
 dropdownvideo =  dcc.Dropdown(
         id='demo-dropdown',
         options=[
-            {'label': 'Social Distancing', 'value': 'social'},
+            {'label': 'Medellin', 'value': 'MED'},
             {'label': 'Montreal', 'value': 'MTL'},
             {'label': 'San Francisco', 'value': 'SF'}
         ],
-        value='NYC',
+        value='MED',
         clearable=False,
         style={'width': '100%'}
     )

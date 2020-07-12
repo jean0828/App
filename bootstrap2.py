@@ -87,6 +87,9 @@ tab1_content = dbc.Card(
                 livingdemo.dropdownvideo,
 
                 ], width = 6),
+                dbc.Col([
+                    html.Div(id="div-visual-mode"),
+                ], width = 6),
             ]),
            
         
@@ -128,6 +131,24 @@ body = html.Div([
     ])
 app.layout = html.Div([navbar, body])
 
+###########################################################
+#
+#          CALLBACKS:
+#
+###########################################################
+
+# Data Loading
+@app.server.before_first_request
+def load_all_footage():
+    global url_dict
+    url_dict = {
+            'MED': 'https://www.youtube.com/watch?v=obtERdHvM8o',
+            'MTL': 'https://www.youtube.com/watch?v=obtERdHvM8o',
+            'SF': 'https://www.youtube.com/watch?v=gPtn6hD7o8g'
+    }
+
+
+
 @app.callback([
     Output('dist_fig','figure'),
     Output('time_fig','figure'),
@@ -166,6 +187,15 @@ def update_fig(selected_boxes,locs,time):
     loc_hist=px.histogram(df3, x="Location type", y="Number of observations", color="Violations",width=700,height=300,color_discrete_sequence= px.colors.diverging.Picnic)
         
     return fig_1,time_fig,loc_pie,loc_hist
+
+
+# Footage Selection
+@app.callback(Output("video_player", "url"),
+              [Input('demo-dropdown', 'value')])
+def select_footage(footage):
+    # Find desired footage and update player video
+    url = url_dict[footage]
+    return url
 
 
 if __name__ == "__main__":
