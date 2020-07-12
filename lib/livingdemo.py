@@ -34,12 +34,16 @@ video = html.Div([
 dropdownvideo =  dcc.Dropdown(
         id='demo-dropdown',
         options=[
-            {'label': 'Medellin', 'value': 'MED'},
-            {'label': 'Montreal', 'value': 'MTL'},
-            {'label': 'San Francisco', 'value': 'SF'}
+            {'label': 'Medellin', 'value': 'Public Street'},
+            {'label': 'Mall', 'value': 'Mall'},
+            {'label': 'Hospital', 'value': 'Hospital'}
         ],
-        value='MED',
+        value='Public Street',
         clearable=False,
         style={'width': '100%'}
     )
+
+livegraph =  dcc.Graph(
+                        id="bar-score-graph"
+)
             

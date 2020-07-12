@@ -88,7 +88,7 @@ tab1_content = dbc.Card(
 
                 ], width = 6),
                 dbc.Col([
-                    html.Div(id="div-visual-mode"),
+                    livingdemo.livegraph,
                 ], width = 6),
             ]),
            
@@ -142,9 +142,9 @@ app.layout = html.Div([navbar, body])
 def load_all_footage():
     global url_dict
     url_dict = {
-            'MED': 'https://www.youtube.com/watch?v=obtERdHvM8o',
-            'MTL': 'https://www.youtube.com/watch?v=obtERdHvM8o',
-            'SF': 'https://www.youtube.com/watch?v=gPtn6hD7o8g'
+            'Public Street': 'https://www.youtube.com/watch?v=obtERdHvM8o',
+            'Mall': 'https://www.youtube.com/watch?v=obtERdHvM8o',
+            'Hospital': 'https://www.youtube.com/watch?v=gPtn6hD7o8g'
     }
 
 
@@ -189,13 +189,25 @@ def update_fig(selected_boxes,locs,time):
     return fig_1,time_fig,loc_pie,loc_hist
 
 
-# Footage Selection
+# Actualizacion de seleccion del video
 @app.callback(Output("video_player", "url"),
               [Input('demo-dropdown', 'value')])
 def select_footage(footage):
     # Find desired footage and update player video
     url = url_dict[footage]
     return url
+
+# Actualizacion de las 
+@app.callback(
+    Output("bar-score-graph","figure"),
+    [Input('demo-dropdown', 'value')]
+)
+def update_barplor(value):
+    place_plot = df1[df1['Location type']==value].groupby('hour').count()
+    place_figure = px.bar(place_plot, y='Violations')
+    place_figure.update_layout(title_text='Number of Violation versus Time',
+                            title_x=0.5)
+    return place_figure
 
 
 if __name__ == "__main__":
