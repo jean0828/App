@@ -22,6 +22,9 @@ df1['total distance']=df1['Number of observations']*df1['Average distance']
 #chart 1. Time of the day vs Number of violations and number of compliant observations
 df2=df1.groupby(["hour","Violations"]).sum().reset_index().drop(columns=['Average distance','Location','Record'])
 df2['Average Distance']=df2['total distance']/df2['Number of observations']
+#-------------------------------------------
+df4 = pd.read_csv("data/sample2.csv", sep=';')
+df4 = df4.groupby('frame').count().reset_index()
 
 
 navbar = dbc.Navbar(
@@ -200,14 +203,22 @@ def select_footage(footage):
 # Actualizacion de las 
 @app.callback(
     Output("bar-score-graph","figure"),
-    [Input('demo-dropdown', 'value')]
+    [Input('demo-dropdown', 'value')],
+    [State('video_player', 'currentTime'),
+    State('demo-dropdown', 'value')]
 )
-def update_barplor(value):
-    place_plot = df1[df1['Location type']==value].groupby('hour').count()
-    place_figure = px.bar(place_plot, y='Violations')
-    place_figure.update_layout(title_text='Number of Violation versus Time',
-                            title_x=0.5)
-    return place_figure
+def update_barplor(value, currentTime, footage):
+    if currentTime is None:
+        place_plot = df1[df1['Location type']==value].groupby('hour').count()
+        place_figure = px.bar(place_plot, y='Violations')
+        place_figure.update_layout(title_text='Number of Violation versus Time', title_x=0.5)
+        return place_figure
+    else:
+        current_frame = round(currentTime * 5)
+        figure = px.line(df4[df4['frame']<=current_frame],x='frame', y='violation')
+        return figure
+
+        
 
 
 if __name__ == "__main__":
