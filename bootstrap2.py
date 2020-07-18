@@ -92,6 +92,11 @@ tab1_content = dbc.Card(
                 ], width = 6),
                 dbc.Col([
                     livingdemo.livegraph,
+                    dcc.Interval(
+                        id='interval-component',
+                        interval=1*1000, # in milliseconds
+                        n_intervals=0
+                    )
                 ], width = 6),
             ]),
            
@@ -203,17 +208,19 @@ def select_footage(footage):
 # Actualizacion de las graficas
 @app.callback(
     Output("bar-score-graph","figure"),
-    [Input('demo-dropdown', 'value')],
+    [Input('demo-dropdown', 'value'),
+    Input('interval-component', 'n_intervals')],
     [State('video_player', 'currentTime'),
     State('demo-dropdown', 'value')]
 )
-def update_barplor(value, currentTime, footage):
+def update_barplor(value, n, currentTime, footage):
     if currentTime is None:
         return {}
     else:
-        current_frame = round(currentTime * 5)
-        figure = px.line(df4[df4['frame']<=current_frame],x='frame', y='violation')
-        return figure
+        if n > 0:
+            current_frame = round(currentTime * 5)
+            figure = px.line(df4[df4['frame']<=current_frame],x='frame', y='violation')
+            return figure
 
         
 
