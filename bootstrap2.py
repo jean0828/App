@@ -200,7 +200,7 @@ def select_footage(footage):
     url = url_dict[footage]
     return url
 
-# Actualizacion de las 
+# Actualizacion de las graficas
 @app.callback(
     Output("bar-score-graph","figure"),
     [Input('demo-dropdown', 'value')],
@@ -209,10 +209,7 @@ def select_footage(footage):
 )
 def update_barplor(value, currentTime, footage):
     if currentTime is None:
-        place_plot = df1[df1['Location type']==value].groupby('hour').count()
-        place_figure = px.bar(place_plot, y='Violations')
-        place_figure.update_layout(title_text='Number of Violation versus Time', title_x=0.5)
-        return place_figure
+        return {}
     else:
         current_frame = round(currentTime * 5)
         figure = px.line(df4[df4['frame']<=current_frame],x='frame', y='violation')
