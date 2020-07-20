@@ -11,41 +11,35 @@ import numpy as np
 import pandas as pd
 import dash_player as player
 
-###############################################################
-#Load and modify the data that will be used in the app.
-#################################################################
+from sqlalchemy import create_engine,text
+engine = create_engine('postgresql+psycopg2://team_9:social_distancing@social-distancing-detector.cbnepizjacyt.us-east-2.rds.amazonaws.com/social_distancing_info')
 
-df1=pd.read_csv("data/sample_db.csv")
-df1['hour']=pd.to_datetime(df1['Time']).dt.hour
-df1['total distance']=df1['Number of observations']*df1['Average distance']
-#chart 1. Time of the day vs Number of violations and number of compliant observations
-df2=df1.groupby(["hour","Violations"]).sum().reset_index().drop(columns=['Average distance','Location','Record'])
-df2['Average Distance']=df2['total distance']/df2['Number of observations']
-time_fig = px.scatter(df2, x="hour", y="Number of observations", color="Violations", size="Average Distance",
-          size_max=15,width=700,height=300,color_discrete_sequence= px.colors.diverging.Picnic)
-time_fig.update_layout(xaxis_type='category',
-                  title_text='Observations per Time of the Day',
-                    title_x=0.5)
+def runQuery(sql):
+    result = engine.connect().execute((text(sql)))
+    return pd.DataFrame(result.fetchall(), columns=result.keys())
 
-#chart of violations per area
-df3=df1.groupby(["Violations","Location type"]).sum().reset_index().drop(columns=['Average distance','Location','Record'])
-df3['Average Distance']=df3['total distance']/df3['Number of observations']
+df2=runQuery("""select * from master_table;""")
 
-loc_pie = px.pie(df3.groupby('Location type').sum().reset_index(), values='Number of observations', names='Location type', title='Observations per Location type',width=700,height=300,color_discrete_sequence= px.colors.diverging.Picnic)
-loc_pie.update_layout(title_x=0.5)
+df2['Hour']=pd.to_datetime(df2['date_time']).dt.hour
+df2['NonViolations']=df2['people_detected']-df2['number_of_distance_violations']
+df2['Non_Violations_Avg_m']=(df2['people_detected']*df2['all_distances_avg_m']-df2['distances_violarios_avg_m']*df2['number_of_distance_violations'])/df2['NonViolations']
 
-loc_hist=px.histogram(df3, x="Location type", y="Number of observations", color="Violations",width=700,height=300,color_discrete_sequence= px.colors.diverging.Picnic)
 
-        #Average distance figure
+df2=df2.drop(columns={'date_time'
+                      ,'source','people_detected'
+                      ,'all_distances_avg_m','positios_with_violations'
+                     ,'positions_whitout_violations'}).dropna()
 
-dist_fig = px.scatter(df1, x="Average distance", y="Number of observations", color="Violations", size="Average distance",
-                size_max=15,width=700,height=300,color_discrete_sequence= px.colors.diverging.Picnic)
-dist_fig.update_layout(title_text='Number of Observations versus Average Distance',
-                            title_x=0.5)
-graph1 = dcc.Graph(figure=dist_fig,id='dist_fig')
-graph2 = dcc.Graph(figure=time_fig,id='time_fig')
-graph3 = dcc.Graph(figure=loc_pie,id='loc_pie')
-graph4 = dcc.Graph(figure=loc_hist,id='loc_hist')
+df3=pd.melt(df2,id_vars=['place','frame','Hour','distances_violarios_avg_m'],
+            value_vars=['number_of_distance_violations']).rename(columns={'distances_violarios_avg_m':'Average Distance'})
+df4=pd.melt(df2,id_vars=['place','frame','Hour','Non_Violations_Avg_m'],
+            value_vars=['NonViolations']).rename(columns={'Non_Violations_Avg_m':'Average Distance'})
+
+df5=pd.concat([df3,df4],ignore_index=True).rename(columns={'place':'Location Type','variable':'Violations','value':'Number of Observations'}).reindex()
+
+df5['Violations'].replace({"number_of_distance_violations": "Yes", "NonViolations": "No"}, inplace=True)
+
+df5['total distance']=df5['Number of Observations']*df5['Average Distance']
 
 yes_no_filter=dcc.Checklist(
     id='yes_no_filter',
@@ -75,8 +69,8 @@ location_filter=dcc.Checklist(
         {'label': 'Hospital', 'value': 'Hospital'},
         {'label': 'Mall', 'value': 'Mall'},
         {'label': 'Restaurant', 'value': 'Restaurant'},
-        {'label': 'Public Street', 'value': 'Public Street'}
+        {'label': 'Public Street', 'value': 'street'}
     ],
-    value=['Metro Station','Mall','Restaurant','Public Street','Hospital'],
+    value=['Metro Station','Mall','Restaurant','street','Hospital'],
     style={'font-size':'90%'}
 )

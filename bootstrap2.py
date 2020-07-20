@@ -16,12 +16,7 @@ PLOTLY_LOGO = "https://correlation1-public.s3-us-west-2.amazonaws.com/training/C
 ###############################################################
 #Load and modify the data that will be used in the app.
 #################################################################
-df1=pd.read_csv("data/sample_db.csv")
-df1['hour']=pd.to_datetime(df1['Time']).dt.hour
-df1['total distance']=df1['Number of observations']*df1['Average distance']
-#chart 1. Time of the day vs Number of violations and number of compliant observations
-df2=df1.groupby(["hour","Violations"]).sum().reset_index().drop(columns=['Average distance','Location','Record'])
-df2['Average Distance']=df2['total distance']/df2['Number of observations']
+df1=stats.df5
 #-------------------------------------------
 df4 = pd.read_csv("data/sample2.csv", sep=';')
 df4 = df4.groupby('frame').count().reset_index()
@@ -167,32 +162,41 @@ def load_all_footage():
     Input('hour_slicer','value')])
 
 def update_fig(selected_boxes,locs,time):
-    df1=stats.df1
-    filtereddf1=df1[df1['Violations'].isin(selected_boxes)][df1['Location type'].isin(locs)][df1['hour'].between(min(time),max(time))]
     
-    df2=filtereddf1.groupby(["hour","Violations"]).sum().reset_index().drop(columns=['Average distance','Location','Record'])
+    if selected_boxes==[]:
+        selected_boxes=['Yes','No']
+    else:
+        selected_boxes=selected_boxes
     
-    df2['Average Distance']=df2['total distance']/df2['Number of observations']
+    if locs==[]:
+        locs=['Metro Station','Mall','Restaurant','street','Hospital']
+    else:
+        locs=locs
     
-    df3=filtereddf1.groupby(["Violations","Location type"]).sum().reset_index().drop(columns=['Average distance','Location','Record'])
+    filtereddf1=df1[df1['Violations'].isin(selected_boxes)][df1['Location Type'].isin(locs)][df1['Hour'].between(min(time),max(time))]
     
-    df3['Average Distance']=df3['total distance']/df3['Number of observations']
+    df2=filtereddf1.groupby(["Hour","Violations"]).sum().reset_index().drop(columns=['Average Distance'])
+    
+    df2['Average Distance']=df2['total distance']/df2['Number of Observations']
+    
+    df3=filtereddf1.groupby(["Violations","Location Type"]).sum().reset_index()
+    
             
-    fig_1=px.scatter(filtereddf1, x="Average distance", y="Number of observations", color="Violations", size="Average distance",
+    fig_1=px.scatter(filtereddf1, x="Average Distance", y="Number of Observations", color="Violations", size="Average Distance",
                 size_max=15,width=700,height=300,color_discrete_sequence= px.colors.diverging.Picnic)
     
-    time_fig = px.scatter(df2, x="hour", y="Number of observations", color="Violations", size="Average Distance",
+    time_fig = px.scatter(df2, x="Hour", y="Number of Observations", color="Violations", size="Average Distance",
           size_max=15,width=700,height=300,color_discrete_sequence= px.colors.diverging.Picnic)
     
     time_fig.update_layout(xaxis_type='category',
                   title_text='Observations per Time of the Day',
                     title_x=0.5)
     
-    loc_pie = px.pie(df3.groupby('Location type').sum().reset_index(), values='Number of observations', names='Location type', title='Observations per Location type',width=700,height=300,color_discrete_sequence= px.colors.diverging.Picnic)
+    loc_pie = px.pie(df3.groupby('Location Type').sum().reset_index(), values='Number of Observations', names='Location Type', title='Observations per Location Type',width=700,height=300,color_discrete_sequence= px.colors.diverging.Picnic)
     
     loc_pie.update_layout(title_x=0.5)
     
-    loc_hist=px.histogram(df3, x="Location type", y="Number of observations", color="Violations",width=700,height=300,color_discrete_sequence= px.colors.diverging.Picnic)
+    loc_hist=px.histogram(df3, x="Location Type", y="Number of Observations", color="Violations",width=700,height=300,color_discrete_sequence= px.colors.diverging.Picnic)
         
     return fig_1,time_fig,loc_pie,loc_hist
 
