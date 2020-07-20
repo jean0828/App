@@ -8,3 +8,5 @@ dash-table==4.8.1
 Flask==1.1.2
 Flask-Compress==1.5.0
 plotly==4.8.2
+sqalchemy
+psycopg2

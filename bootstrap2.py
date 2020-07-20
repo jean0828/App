@@ -17,9 +17,9 @@ PLOTLY_LOGO = "https://correlation1-public.s3-us-west-2.amazonaws.com/training/C
 #Load and modify the data that will be used in the app.
 #################################################################
 df1=stats.df5
+df4 = stats.df2.groupby('frame').sum().reset_index().sort_values(['frame'],ascending=True)
 #-------------------------------------------
-df4 = pd.read_csv("data/sample2.csv", sep=';')
-df4 = df4.groupby('frame').count().reset_index()
+
 
 
 navbar = dbc.Navbar(
@@ -222,12 +222,14 @@ def update_barplor(value, n, currentTime, footage):
         return {}
     else:
         if n > 0:
-            current_frame = round(currentTime * 5)
-            figure = px.line(df4[df4['frame']<=current_frame],x='frame', y='violation')
+            current_frame = round(currentTime * 15)
+            figure = px.line(df4[df4['frame']<=current_frame],x='frame', y='number_of_distance_violations')
+            figure.update_layout(plot_bgcolor="white",  xaxis_title='Time',
+                   yaxis_title='Violations')
             return figure
 
         
 
 
 if __name__ == "__main__":
-    app.run_server(debug = True, host='0.0.0.0')
+    app.run_server(debug = True, host='0.0.0.0', port=80)
