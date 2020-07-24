@@ -17,7 +17,9 @@ PLOTLY_LOGO = "https://correlation1-public.s3-us-west-2.amazonaws.com/training/C
 #Load and modify the data that will be used in the app.
 #################################################################
 df1=stats.df5
-df4 = stats.df2.groupby('frame').sum().reset_index().sort_values(['frame'],ascending=True)
+
+df2 = stats.runQuery("""select * from master_table;""")
+df4 = df2.groupby(['source','frame']).sum().reset_index().sort_values(['frame'],ascending=True)
 #-------------------------------------------
 
 
@@ -145,9 +147,11 @@ app.layout = html.Div([navbar, body])
 def load_all_footage():
     global url_dict
     url_dict = {
-            'Public Street': 'https://www.youtube.com/watch?v=obtERdHvM8o',
-            'Mall': 'https://www.youtube.com/watch?v=obtERdHvM8o',
-            'Hospital': 'https://www.youtube.com/watch?v=gPtn6hD7o8g'
+            'Asakusa_Kaminarimon_Gate_1_mall.mp4': 'https://www.youtube.com/watch?v=obtERdHvM8o',
+            'Times3_street.mp4': 'https://www.youtube.com/watch?v=obtERdHvM8o',
+            'Times_Square-Manhattan-New_York_City_1_street.mp4': 'https://www.youtube.com/watch?v=gPtn6hD7o8g',
+            'pedestrians_street.mp4': 'https://www.youtube.com/watch?v=gPtn6hD7o8g',
+            'Shibuya_Scramble_Crossing_Live_Camera_2_street.mp4': 'https://www.youtube.com/watch?v=obtERdHvM8o'
     }
 
 
@@ -222,8 +226,8 @@ def update_barplor(value, n, currentTime, footage):
         return {}
     else:
         if n > 0:
-            current_frame = round(currentTime * 15)
-            figure = px.line(df4[df4['frame']<=current_frame],x='frame', y='number_of_distance_violations')
+            current_frame = round(currentTime * 24)
+            figure = px.line(df4[(df4['frame']<=current_frame) & (df4['source']==footage)],x='frame', y='number_of_distance_violations')
             figure.update_layout(plot_bgcolor="white",  xaxis_title='Time',
                    yaxis_title='Violations')
             return figure

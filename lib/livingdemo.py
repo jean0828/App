@@ -34,11 +34,13 @@ video = html.Div([
 dropdownvideo =  dcc.Dropdown(
         id='demo-dropdown',
         options=[
-            {'label': 'Medellin', 'value': 'Public Street'},
-            {'label': 'Mall', 'value': 'Mall'},
-            {'label': 'Hospital', 'value': 'Hospital'}
+            {'label': 'Asakusa Kaminarimon Gate', 'value': 'Asakusa_Kaminarimon_Gate_1_mall.mp4'},
+            {'label': 'Times Street', 'value': 'Times3_street.mp4'},
+            {'label': 'Time Square', 'value': 'Times_Square-Manhattan-New_York_City_1_street.mp4'},
+            {'label': 'Pedestrians Street', 'value': 'pedestrians_street.mp4'},
+            {'label': 'Shibuya Scramble', 'value': 'Shibuya_Scramble_Crossing_Live_Camera_2_street.mp4'}
         ],
-        value='Public Street',
+        value='Asakusa_Kaminarimon_Gate_1_mall.mp4',
         clearable=False,
         style={'width': '100%'}
     )
