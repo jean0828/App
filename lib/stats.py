@@ -22,7 +22,7 @@ df2=runQuery("""select * from master_table;""")
 
 df2['Hour']=pd.to_datetime(df2['date_time']).dt.hour
 df2['NonViolations']=df2['people_detected']-df2['number_of_distance_violations']
-df2['Non_Violations_Avg_m']=(df2['people_detected']*df2['all_distances_avg_m']-df2['distances_violarios_avg_m']*df2['number_of_distance_violations'])/df2['NonViolations']
+#df2['Non_Violations_Avg_m']=(df2['people_detected']*df2['all_distances_avg_m']-df2['distances_violarios_avg_m']*df2['number_of_distance_violations'])/df2['NonViolations']
 
 
 df2=df2.drop(columns={'date_time'
@@ -30,16 +30,18 @@ df2=df2.drop(columns={'date_time'
                       ,'all_distances_avg_m','positios_with_violations'
                      ,'positions_whitout_violations'}).dropna()
 
-df3=pd.melt(df2,id_vars=['place','frame','Hour','distances_violarios_avg_m'],
-            value_vars=['number_of_distance_violations']).rename(columns={'distances_violarios_avg_m':'Average Distance'})
-df4=pd.melt(df2,id_vars=['place','frame','Hour','Non_Violations_Avg_m'],
-            value_vars=['NonViolations']).rename(columns={'Non_Violations_Avg_m':'Average Distance'})
+df3=pd.melt(df2,id_vars=['place','frame','Hour','distances_violations_avg_m'],
+            value_vars=['number_of_distance_violations']).rename(columns={'distances_violations_avg_m':'Average Distance'})
+df4=pd.melt(df2,id_vars=['place','frame','Hour','good_distances_avg_m'],
+            value_vars=['NonViolations']).rename(columns={'good_distances_avg_m':'Average Distance'})
 
 df5=pd.concat([df3,df4],ignore_index=True).rename(columns={'place':'Location Type','variable':'Violations','value':'Number of Observations'}).reindex()
 
 df5['Violations'].replace({"number_of_distance_violations": "Yes", "NonViolations": "No"}, inplace=True)
 
 df5['total distance']=df5['Number of Observations']*df5['Average Distance']
+df5['Location Type']=df5['Location Type'].str.capitalize()
+
 
 yes_no_filter=dcc.Checklist(
     id='yes_no_filter',
@@ -69,8 +71,8 @@ location_filter=dcc.Checklist(
         {'label': 'Hospital', 'value': 'Hospital'},
         {'label': 'Mall', 'value': 'Mall'},
         {'label': 'Restaurant', 'value': 'Restaurant'},
-        {'label': 'Public Street', 'value': 'street'}
+        {'label': 'Public Street', 'value': 'Street'}
     ],
-    value=['Metro Station','Mall','Restaurant','street','Hospital'],
+    value=['Metro Station','Mall','Restaurant','Street','Hospital'],
     style={'font-size':'90%'}
 )
