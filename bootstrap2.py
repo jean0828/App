@@ -147,11 +147,11 @@ app.layout = html.Div([navbar, body])
 def load_all_footage():
     global url_dict
     url_dict = {
-            'Asakusa_Kaminarimon_Gate_1_mall.mp4': 'https://www.youtube.com/watch?v=obtERdHvM8o',
-            'Times3_street.mp4': 'https://www.youtube.com/watch?v=obtERdHvM8o',
-            'Times_Square-Manhattan-New_York_City_1_street.mp4': 'https://www.youtube.com/watch?v=gPtn6hD7o8g',
-            'pedestrians_street.mp4': 'https://www.youtube.com/watch?v=gPtn6hD7o8g',
-            'Shibuya_Scramble_Crossing_Live_Camera_2_street.mp4': 'https://www.youtube.com/watch?v=obtERdHvM8o'
+            'Asakusa_Kaminarimon_Gate_1_mall.mp4': 'https://youtu.be/OnosLj1oSQE',
+            'Times3_street.mp4': 'https://youtu.be/HTIXDNUSxpo',
+            'Times_Square-Manhattan-New_York_City_1_street.mp4': 'https://youtu.be/jKyRDLCCkUI',
+            'pedestrians_street.mp4': 'https://youtu.be/JPTQblI0zbI',
+            'Shibuya_Scramble_Crossing_Live_Camera_2_street.mp4': 'https://youtu.be/tm8O0EP4Bqg'
     }
 
 
