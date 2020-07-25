@@ -9,6 +9,7 @@ import plotly.io as pio
 import pandas as pd
 import plotly.express as px
 from lib import livingdemo, stats
+import plotly.graph_objects as go
 
 
 PLOTLY_LOGO = "https://correlation1-public.s3-us-west-2.amazonaws.com/training/COLOMBIA+MAIN+SANS+TAG.svg"
@@ -227,9 +228,17 @@ def update_barplor(value, n, currentTime, footage):
     else:
         if n > 0:
             current_frame = round(currentTime * 24)
-            figure = px.line(df4[(df4['frame']<=current_frame) & (df4['source']==footage)],x='frame', y='number_of_distance_violations')
-            figure.update_layout(plot_bgcolor="white",  xaxis_title='Time',
-                   yaxis_title='Violations')
+            data = df4[(df4['frame']<=current_frame) & (df4['source']==footage)]
+            figure = go.Figure()
+            figure.add_trace(go.Scatter(x=data['frame'], y=data['people_detected'],
+                    mode='lines',
+                    name='people detected'))
+            figure.add_trace(go.Scatter(x=data['frame'], y=data['number_of_distance_violations'],
+                    mode='lines',
+                    name='Violations detected'))
+            
+            figure.update_layout(plot_bgcolor="white")
+
             return figure
 
         
