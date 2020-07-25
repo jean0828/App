@@ -9,7 +9,6 @@ decorator==4.4.2
 Flask==1.1.2
 Flask-Compress==1.5.0
 Flask-SeaSurf==0.2.2
-numpy==1.16.1
 pandas==0.24.1
 plotly==4.8.2
 plotly-express==0.4.1
