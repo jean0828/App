@@ -227,7 +227,7 @@ def update_barplor(value, n, currentTime, footage):
         return {}
     else:
         if n > 0:
-            current_frame = round(currentTime * 24)
+            current_frame = round(currentTime * 26)
             data = df4[(df4['frame']<=current_frame) & (df4['source']==footage)]
             figure = go.Figure()
             figure.add_trace(go.Scatter(x=data['frame'], y=data['people_detected'],
