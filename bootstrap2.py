@@ -237,7 +237,7 @@ def update_barplor(value, n, currentTime, footage):
                     mode='lines',
                     name='Violations detected'))
             
-            figure.update_layout(plot_bgcolor="white")
+            figure.update_layout(plot_bgcolor="white", xaxis = dict(showticklabels=False), yaxis_title="Count")
 
             return figure
 
