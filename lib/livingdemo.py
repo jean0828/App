@@ -18,7 +18,7 @@ import dash_player as player
 video = html.Div([
             html.Div(children=player.DashPlayer(
                     id = 'video_player',
-                    url = 'https://youtu.be/OnosLj1oSQE',
+                    url = 'https://youtu.be/ddT0cy2hlxw',
                     controls = True,
                     playing = False,
                     width = '750px',
