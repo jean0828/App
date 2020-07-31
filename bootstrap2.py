@@ -21,6 +21,7 @@ df1=stats.df5
 
 df2 = stats.runQuery("""select * from master_table;""")
 df4 = df2.groupby(['source','frame']).sum().reset_index().sort_values(['frame'],ascending=True)
+df4['time'] = df4['frame']/26
 #-------------------------------------------
 
 
@@ -227,17 +228,17 @@ def update_barplor(value, n, currentTime, footage):
         return {}
     else:
         if n > 0:
-            current_frame = round(currentTime * 26)
-            data = df4[(df4['frame']<=current_frame) & (df4['source']==footage)]
+            #current_frame = round(currentTime * 26)
+            data = df4[(df4['time']<=currentTime) & (df4['source']==footage)]
             figure = go.Figure()
-            figure.add_trace(go.Scatter(x=data['frame'], y=data['people_detected'],
+            figure.add_trace(go.Scatter(x=data['time'], y=data['people_detected'],
                     mode='lines',
                     name='people detected'))
-            figure.add_trace(go.Scatter(x=data['frame'], y=data['number_of_distance_violations'],
+            figure.add_trace(go.Scatter(x=data['time'], y=data['number_of_distance_violations'],
                     mode='lines',
                     name='Violations detected'))
             
-            figure.update_layout(plot_bgcolor="white", xaxis = dict(showticklabels=False), yaxis_title="Count")
+            figure.update_layout(plot_bgcolor="white", xaxis_title="Time [seconds]", yaxis_title="Count")
 
             return figure
 
