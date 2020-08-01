@@ -22,7 +22,6 @@ df2=runQuery("""select * from master_table;""")
 
 df2['Hour']=pd.to_datetime(df2['date_time']).dt.hour
 df2['NonViolations']=df2['people_detected']-df2['number_of_distance_violations']
-#df2['Non_Violations_Avg_m']=(df2['people_detected']*df2['all_distances_avg_m']-df2['distances_violarios_avg_m']*df2['number_of_distance_violations'])/df2['NonViolations']
 
 
 df2=df2.drop(columns={'date_time'

@@ -17,12 +17,41 @@ PLOTLY_LOGO = "https://correlation1-public.s3-us-west-2.amazonaws.com/training/C
 ###############################################################
 #Load and modify the data that will be used in the app.
 #################################################################
-df1=stats.df5
+
+
+stats_df2=stats.runQuery("""select * from master_table;""")
+
+stats_df2['Hour']=pd.to_datetime(stats_df2['date_time']).dt.hour
+stats_df2['NonViolations']=stats_df2['people_detected']-stats_df2['number_of_distance_violations']
+
+
+stats_df2=stats_df2.drop(columns={'date_time'
+                      ,'source','people_detected'
+                      ,'all_distances_avg_m','positios_with_violations'
+                     ,'positions_whitout_violations'}).dropna()
+
+stats_df3=pd.melt(stats_df2,id_vars=['place','frame','Hour','distances_violations_avg_m'],
+            value_vars=['number_of_distance_violations']).rename(columns={'distances_violations_avg_m':'Average Distance'})
+stats_df4=pd.melt(stats_df2,id_vars=['place','frame','Hour','good_distances_avg_m'],
+            value_vars=['NonViolations']).rename(columns={'good_distances_avg_m':'Average Distance'})
+
+stats_df5=pd.concat([stats_df3,stats_df4],ignore_index=True).rename(columns={'place':'Location Type','variable':'Violations','value':'Number of Observations'}).reindex()
+
+stats_df5['Violations'].replace({"number_of_distance_violations": "Yes", "NonViolations": "No"}, inplace=True)
+
+stats_df5['total distance']=stats_df5['Number of Observations']*stats_df5['Average Distance']
+stats_df5['Location Type']=stats_df5['Location Type'].str.capitalize()
+
+df1=stats_df5
+
+
 
 df2 = stats.runQuery("""select * from master_table;""")
 df4 = df2.groupby(['source','frame']).sum().reset_index().sort_values(['frame'],ascending=True)
 df4['time'] = df4['frame']/26
 #-------------------------------------------
+
+
 
 
 
@@ -175,7 +204,7 @@ def update_fig(selected_boxes,locs,time):
         selected_boxes=selected_boxes
     
     if locs==[]:
-        locs=['Metro Station','Mall','Restaurant','street','Hospital']
+        locs=['Metro Station','Mall','Restaurant','Street','Beach']
     else:
         locs=locs
     
