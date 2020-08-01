@@ -68,11 +68,11 @@ location_filter=dcc.Checklist(
     id='location_filter',
     options=[
         {'label': 'Metro Station', 'value': 'Metro'},
-        {'label': 'Hospital', 'value': 'Hospital'},
+        {'label': 'Beach', 'value': 'Beach'},
         {'label': 'Mall', 'value': 'Mall'},
         {'label': 'Restaurant', 'value': 'Restaurant'},
         {'label': 'Public Street', 'value': 'Street'}
     ],
-    value=['Metro','Mall','Restaurant','Street','Hospital'],
+    value=['Metro','Mall','Restaurant','Street','Beach'],
     style={'font-size':'90%'}
 )
