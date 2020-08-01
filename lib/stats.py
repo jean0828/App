@@ -67,12 +67,12 @@ hour_slicer=dcc.RangeSlider(
 location_filter=dcc.Checklist(
     id='location_filter',
     options=[
-        {'label': 'Metro Station', 'value': 'Metro Station'},
+        {'label': 'Metro Station', 'value': 'Metro'},
         {'label': 'Hospital', 'value': 'Hospital'},
         {'label': 'Mall', 'value': 'Mall'},
         {'label': 'Restaurant', 'value': 'Restaurant'},
         {'label': 'Public Street', 'value': 'Street'}
     ],
-    value=['Metro Station','Mall','Restaurant','Street','Hospital'],
+    value=['Metro','Mall','Restaurant','Street','Hospital'],
     style={'font-size':'90%'}
 )
